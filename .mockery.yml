@@ -1,7 +1,6 @@
 all: false
 dir: '{{.InterfaceDir}}/mock'
 filename: mocks.go
-# filename: "{{.InterfaceName|lower}}.go"
 force-file-write: true
 formatter: goimports
 log-level: info
@@ -11,8 +10,6 @@ recursive: true
 require-template-schema-exists: true
 template: testify
 template-schema: '{{.Template}}.schema.json'
-# with-expecter: true
-# case: underscore
 packages:
   userman/internal:
     config:
